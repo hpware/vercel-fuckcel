@@ -1,0 +1,5 @@
+title: "Howard's Website"
+description: "a super simple website with his projects and such."
+encoding: utf-8
+
+exclude: ["README.md", "LICENSE", "*.gem", "*.gemspec", "Gemfile.lock"]
