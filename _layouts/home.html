@@ -1,0 +1,22 @@
+<html>
+    {% include head.html %}
+    {% include css.html %}
+    <style>
+    section.titlepage {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align:center;
+        
+    }
+  </style>
+  <body>
+    {% include headers.html %}
+    <section class="titlepage">
+        <h1>Howard</h1>
+    </section>
+    {{ content }}
+  </body>
+</html>
