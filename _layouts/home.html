@@ -18,8 +18,8 @@
         <h1>Howard</h1>
     </section>
     {{ content }}
-    <section>
-        <h2>My Posts</h2>
+    <section id="posts">
+    <h2>My Posts</h2>
 <ul>
   {% for post in site.posts %}
     <li>
@@ -28,5 +28,25 @@
   {% endfor %}
 </ul>
     </section>
+    <section id="projects">
+      <h2>My Projects</h2>
+      <ul>
+        {% for project in site.projects %}
+        <li>
+          <a href="{{ project.play_url }}">{{ project.title }}</a>
+          {% if project.github_repo %}
+          - <a href="{{ project.github_repo }}">GitHub</a>
+          {% endif %}
+          { % if project.play_url %}
+          <a href="{{ project.play_url }}">Page</a>
+          {% endif %}
+          { % if project.description %}
+          <p>{{ project.description }}</p>
+          {% endif %}
+        </li>
+        {% endfor %}
+      </ul>
+    </section>
+    {% include footer.html %}
   </body>
 </html>

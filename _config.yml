@@ -26,6 +26,12 @@ baseurl: ""
 url: "https://hpware.me" 
 twitter_username: ictechz
 github_username:  hpware
+collections:
+  blog:
+    output: true
+    permalink: /blog/:year/:month/:day/:title/
+  projects:
+    output: false
 
 # Build settings
 plugins:
