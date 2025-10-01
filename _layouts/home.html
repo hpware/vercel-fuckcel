@@ -16,12 +16,13 @@
     {% include headers.html %}
     <section class="titlepage">
         <h1>Howard</h1>
+        <p>This website is still a work in progress. :)</p>
     </section>
     {{ content }}
     <section id="posts">
     <h2>My Posts</h2>
 <ul>
-  {% for post in site.posts %}
+  {% for post in site.blog %}
     <li>
       <a href="{{ post.url }}">{{ post.title }}</a>
     </li>
@@ -37,10 +38,10 @@
           {% if project.github_repo %}
           - <a href="{{ project.github_repo }}">GitHub</a>
           {% endif %}
-          { % if project.play_url %}
+          {% if project.play_url %}
           <a href="{{ project.play_url }}">Page</a>
           {% endif %}
-          { % if project.description %}
+          {% if project.description %}
           <p>{{ project.description }}</p>
           {% endif %}
         </li>
