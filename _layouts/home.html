@@ -2,14 +2,23 @@
     {% include head.html %}
     {% include css.html %}
     <style>
-    section.titlepage {
+    .titlepage {
         height: 100vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         text-align:center;
-        
+    }
+    .projects {
+      display: grid;
+      grid-column: 2;
+      div {
+        border: black 1px 1px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+      }
     }
   </style>
   <body>
@@ -29,11 +38,11 @@
   {% endfor %}
 </ul>
     </section>
-    <section id="projects">
+    <section id="projects" class="projects">
       <h2>My Projects</h2>
-      <ul>
+      <div>
         {% for project in site.projects %}
-        <li>
+        <div>
           <a href="{{ project.play_url }}">{{ project.title }}</a>
           {% if project.github_repo %}
           - <a href="{{ project.github_repo }}">GitHub</a>
@@ -44,9 +53,9 @@
           {% if project.description %}
           <p>{{ project.description }}</p>
           {% endif %}
-        </li>
+        </div>
         {% endfor %}
-      </ul>
+      </div>
     </section>
     {% include footer.html %}
   </body>
