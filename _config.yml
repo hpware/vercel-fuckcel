@@ -36,9 +36,9 @@ collections:
 # Build settings
 plugins:
   - jekyll-feed
-  #- jekyll-minifier
-#jekyll-minifier:
-#  exclude: 'atom.xml' # Exclude files from processing - file name, glob pattern or array of file names and glob patterns
+  - jekyll-minifier
+jekyll-minifier:
+  exclude: 'atom.xml' # Exclude files from processing - file name, glob pattern or array of file names and glob patterns
 
 # Exclude from processing.
 # The following items will not be processed, by default.
