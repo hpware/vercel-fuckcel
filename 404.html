@@ -1,9 +1,13 @@
 ---
 permalink: /404.html
 ---
-
-<style type="text/css" media="screen">
-  .container {
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+{% include css.html %}
+<body>
+<style type="text/css">
+  div {
     margin: 10px auto;
     max-width: 600px;
     text-align: center;
@@ -16,9 +20,11 @@ permalink: /404.html
   }
 </style>
 
-<div class="container">
+<div>
   <h1>404</h1>
-
   <p><strong>Page not found :(</strong></p>
   <p>The requested page could not be found.</p>
+  <a href="/"><button>Go back!</button></a>
 </div>
+</body>
+</html>

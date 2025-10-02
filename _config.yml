@@ -29,7 +29,7 @@ github_username:  hpware
 collections:
   blog:
     output: true
-    permalink: /blog/:year/:month/:day/:title/
+    permalink: /blog/:year/:month/:title/
   projects:
     output: false
 
