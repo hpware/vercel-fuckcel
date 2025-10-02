@@ -22,7 +22,7 @@ title: Howard's Website
 email: ""
 description: >- # this means to ignore newlines until "baseurl:"
   This website is where I put stuff
-baseurl: ""
+baseurl: "https://hpware.me"
 url: "https://hpware.me"
 twitter_username: ictechz
 github_username:  hpware
